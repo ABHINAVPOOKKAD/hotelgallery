@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*NAVIGATION BAR*/
+.navigation_bar ul li
+{
+    display: inline;
+    padding: 20px;
+    
+   }
+ul{
+    text-align: center;
+    font-size: 15px;
+    
+}
+.bar{
+    background-color:white;
+    margin-top: -65px;
+    margin-left: 34px;
+    padding-left: 15px;
+   /* position: fixed;*/
+    
+}
+a:hover{
+    background-color: orange;
+    border-radius: 5px;
+}
+/*IMAGE SLIDER*/
+.IMAGE_SLIDER{
+    height: 350px;
+    width: 90%;
+    margin: auto;
+    position: relative;/*dt*/
+    display: grid;/*dt*/
+    place-items: center;
+
+}
+.slide_track{
+    display: flex;/*dt*/
+    width: calc(250px * 12);
+    animation: scroll 40s linear infinite;
+}
+.slide_track:hover{
+    animation-play-state: paused;
+}
+@keyframes scroll{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 12));
+    }
+}
+.slide{
+    height: 350px;
+    width: 90%;
+    display: flex;
+    padding-left: 5px;
+    perspective: 100px;
+
+}
+img{
+    transition: transform 5s;
+}
+
+img:hover{
+    transform: translateZ(2px);
+    box-shadow: 12px 12px 2px 1px #787671;
+}
+/*MENU*/
+.menu{
+    background-image: url(./brick-wall.jpg);
+    background-size: cover;
+    height: 700px;
+    width: 8000px;
+    position: sticky;
+    
+}
+    #rectangle {
+        width: 114px;
+        height: 52px;
+        background:rgb(86, 45, 2);
+        margin-left: 708px;
+        border-radius: 5px;
+        position: relative;
+        color: white;
+        text-align: center;
+        padding-top: 32px;
+      }
+.menu_slide1{
+    img{
+        margin-left: 50px;
+        margin-top: 69px;
+        border-radius: 10px;
+    }
+    h2{
+        margin-top: -342px;
+        margin-left: 324px;
+    }
+    li{
+        margin-top: 22px;
+        margin-left: 342px;
+    }
+}  
+.menu_slide2{
+    img{
+        margin-left: 574px;
+        margin-top: -229px;
+        border-radius: 10px;
+    }
+    h2{
+        margin-top: -335px;
+        margin-left: 849px;
+    }
+    li{
+        margin-top: 22px;
+        margin-left: 878px;
+    }
+}  
+.menu_slide3{
+    img{
+        margin-left: 1035px;
+        margin-top: -236px;
+        border-radius: 10px;
+    }
+    h2{
+        margin-top: -342px;
+        margin-left: 1317px;
+    }
+    li{
+        margin-top: 22px;
+        margin-left: 1341px;
+    }
+}  
+.parralax_box{
+        margin: 50px;
+        height: 500px;
+        width: 100%;
+        background-image: url("./parallax.jpg");
+        background-size:cover ;
+        background-attachment: fixed;/*background-attachment:scroll*/
+        border-radius: 30px;
+        margin-left: 10px;
+
+}
+    
+    .about_us{
+        color:white;
+        text-align: center;
+        margin-top: -359px;
+        margin-left: 10px;
+    }
+.other_brands{
+    margin-top: 191px;
+    height: 600px;
+    width: 100%;
+    background-image:url(./our_brands.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+.sub_a{
+    margin-left: 5px;
+    background-color: rgba(16, 16, 16, 0.897);
+    height: 450px;
+    width:1453px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+form{
+    label{
+
+        color: white;
+        font-size: 30px;
+        margin-left: 640px;
+        margin-top: 50px;
+        margin-bottom: 90px;
+    
+    }
+    #r1{
+        margin-left: 645px;
+    }
+    #feed{
+        margin-left: 644px;
+        margin-bottom: 10px;
+    }
+
+    
+    #submit{
+        width: 114px;
+        height: 32px;
+        background:rgba(173, 19, 142,0.5);
+        margin-top: 43px;
+        margin-left: 716px;
+       
+      }
+    }
+    
+
+
+
+
